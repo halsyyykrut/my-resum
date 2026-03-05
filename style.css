@@ -303,6 +303,8 @@
             h1 { font-size: 2.2rem; }
             section { padding: 25px; }
             #theme-toggle { position: relative; padding: 8px 15px; font-size: 0.8rem;}
+            .experience-item::before { left: -20px;   width: 10px;
+            height: 10px;}
         }
 
         @keyframes scrollGrid {
