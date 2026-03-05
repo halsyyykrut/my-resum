@@ -78,27 +78,15 @@
         }
 
     
-        header {
+        header { 
             display: flex;
-            justify-content: space-between;
-            align-items: center;
             gap: 30px;
             margin-bottom: 60px;
-            position: relative;
             color:var(--text-main);    
         }
         #profile {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            flex-grow: 1;
+            flex-grow: 1; 
         }
-        .profile-meta {
-            align-items: center;
-            gap: 25px;
-            margin-bottom: 15px;
-        }
-
      
         .profile-meta__avatar-placeholder {
             width: 100px;
@@ -154,9 +142,12 @@
         
         /* Переключатель темы */
         #theme-toggle {
+      
+            justify-content: center;
             background: var(--bg-card);
             border: 1px solid var(--border);
             color: var(--text-main);
+            margin-top: 10px;
             padding: 10px 20px;
             border-radius: 30px;
             cursor: pointer;
@@ -164,7 +155,7 @@
             font-size: 0.9rem;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             transition: var(--transition);
-            white-space: nowrap;
+           
         }
 
         #theme-toggle:hover {
@@ -176,6 +167,8 @@
 
         /* --- СЕКЦИИ (CARDS) --- */    
         section {
+            display: flex;
+            flex-direction: column;
             background-color: var(--bg-card);
             padding: 40px;
             border-radius: 20px;
@@ -309,7 +302,7 @@
             .profile-meta { flex-direction: column; align-items: flex-start; gap: 15px; }
             h1 { font-size: 2.2rem; }
             section { padding: 25px; }
-            #theme-toggle { position: absolute; top: 0; right: 0; padding: 8px 15px; font-size: 0.8rem;}
+            #theme-toggle { position: relative; padding: 8px 15px; font-size: 0.8rem;}
         }
 
         @keyframes scrollGrid {
